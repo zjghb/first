@@ -8,6 +8,6 @@ public class Demo {
 
     public static void main(String[] args) {
         System.out.println("helloworld");
-        new ThreadPoolExecutor(1, 5, 10, TimeUnit.SECONDS,new ArrayBlockingQueue<>(5));
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 5, 10, TimeUnit.SECONDS, new ArrayBlockingQueue(5));
     }
 }
